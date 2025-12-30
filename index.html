@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <meta name="description" content="Portafolio web moderno con navbar, footer, banner de cookies y felxbox">
+    <link rel="stylesheet" href="src/css/styles.css">
+</head>
+
+<body>
+    <!-- Aquí van navbar, footer y banner de cookies -->
+    <!-- Navbar en header -->
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="#inicio" class="nav__logo">
+                <img src="src/img/logo.svg" alt="Logo de Abraham" />
+                <span>Abraham</span>
+            </a>
+            <ul class="nav__menu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+
+            <a href="#contacto" class="navbar__cta">Hablemos</a>
+        </nav>
+    </header>
+
+    <!-- Contenido pricipal -->
+    <main>
+        <!-- Hero/banner para tener mi c"contenido central" -->
+        <section id="inicio" class="hero">
+            <h1>Hola, soy Abraham</h1>
+            <p>Código interface web modernas, responsiva y accesible</p>
+        </section>
+    </main>
+
+    <!-- Placeholder de proyectos personales -->
+    <section id="proyectos" class="section">
+        <h2>Proyectos</h2>
+        <p>Aquí van mis proyectos personales.</p>
+    </section>
+
+    <section id="sobre-mi" class="section">
+        <h2>Sobre mí</h2>
+        <p>Información sobre mí.</p>
+    </section>
+
+    <section id="contacto" class="section">
+        <h2>Contacto</h2>
+        <p>Formulario de contacto o información.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer" id="terminos">
+        <section class="footer__cols">
+            <div>
+                <h3>Abraham</h3>
+                <p>Aprendis web y diseñador de interfaces.</p>
+            </div>
+            <div>
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#terminos">Términos y condiciones</a></li>
+                    <li><a href="#privacidad">Política de privacidad</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Sígueme</h4>
+                <ul>
+                    <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+                    <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
+                </ul>
+            </div>
+        </section>
+        <small>&copy; 2024 Abraham. Todos los derechos reservados.</small>
+    </footer>
+    <!-- Banner de cookies -->
+    <div class="cookie-banner">
+        <p>
+            Usamos cookies para mejorar tu experiencia en nuestro sitio web. Al continuar navegando, aceptas nuestro uso
+            de cookies.
+            <a href="#privacidad">Más información</a>
+        </p>
+        <button class="cookie-banner__btn">Aceptar</button>
+    </div>
+</body>
+
+</html>
