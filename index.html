@@ -1,102 +1,129 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Web</title>
+    <title>Portafollio web</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-    <meta name="description" content="Portafolio web moderno con navbar, footer, banner de cookies y felxbox">
-    <link rel="stylesheet" href="src/css/styles.css">
+    <meta name="description" content="Portafolio web moderno con navbar, footer, banner de cookies y flexbox">
+    <link rel="stylesheet" href="./src/css/style.css">
+    
 </head>
-
 <body>
-    <!-- Aquí van navbar, footer y banner de cookies -->
-    <!-- Navbar en header -->
-    <header class="site-header">
-        <nav class="navbar">
-            <a href="#inicio" class="nav__logo">
-                <img src="src/img/logo.svg" alt="Logo de Abraham" />
-                <span>Abraham</span>
+    <a class="skip-link" href="#contenido">Saltar Contenido</a>
+    <!-- Aqui van navbar, footer, banner de cookies y flexbox -->
+     <!-- Navbar en Header -->   
+     <header class="site-header" id="top">
+        <nav class="navbar container" aria-label="Navegación principal">
+            <a href="#inicio" class="nav__logo" aria-label="Ir al inicio">
+            <img src="./src/img/logo.png" alt="Logo de abraham" />
+            <span>abraham<span class="brand-dot">hernandez</span></span>
             </a>
-            <ul class="nav__menu">
-                <li><a href="#inicio" class="nav-link">Inicio</a></li>
-                <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
-                <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
-                <li><a href="#contacto" class="nav-link">Contacto</a></li>
-            </ul>
+            <div class="nav__actions">
+                <ul class="nav__menu">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+                    <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+                
+                <a href="#contacto" class="navbar__cta">
+                    <span class="icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                            <path d="M21 8l-9 6L3 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3 8v10h18V8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    Hablemos
+                </a>
 
-            <a href="#contacto" class="navbar__cta">Hablemos</a>
-        </nav>
-    </header>
-
-    <!-- Contenido pricipal -->
-    <main>
-        <!-- Hero/banner para tener mi c"contenido central" -->
-        <section id="inicio" class="hero">
-            <h1>Hola, soy Abraham</h1>
-            <p>Código interface web modernas, responsiva y accesible</p>
-        </section>
-    </main>
-
-    <!-- Placeholder de proyectos personales -->
-    <section id="proyectos" class="section">
-        <h2>Proyectos</h2>
-        <p>Aquí van mis proyectos personales.</p>
-    </section>
-
-    <section id="sobre-mi" class="section">
-        <h2>Sobre mí</h2>
-        <p>Información sobre mí.</p>
-    </section>
-
-    <section id="contacto" class="section">
-        <h2>Contacto</h2>
-        <p>Formulario de contacto o información.</p>
-    </section>
-
-    <!-- Footer -->
-    <footer class="site-footer" id="terminos">
-        <section class="footer__cols">
-            <div>
-                <h3>Abraham</h3>
-                <p>Aprendis web y diseñador de interfaces.</p>
+                <button class="nav__toggle" id="navToggle" aria-expanded="false"
+                aria-controls="mobilePanel"
+                aria-label="Abrir menu">
+                <span class="sr-only">Abrir menu</span>
+                <span class="burger" aria-hidden="true"></span>
+                </button>
             </div>
-            <div>
+
+            <div class="nav__panel" id="mobilePanel" hidden>
+                <ul class="nav__panelList">
+                    <li><a href="#inicio" class="panel-link">Inicio</a></li>
+                    <li><a href="#sobre-mi" class="panel-link">Sobre mí</a></li>
+                    <li><a href="#proyectos" class="panel-link">Proyectos</a></li>
+                    <li><a href="#contacto" class="panel-link">Contacto</a></li>
+                    <li class="panel-divider"></li>
+                    <li><a class="panel-cta" href="#contacto">Hablemos</a></li>
+                </ul>
+            </div>
+            
+        </nav>
+     </header>
+
+     <!-- Contenido principal  -->
+      <main id="contenido">
+        <!-- Hero/banner para tener mi contenido principal -->
+         <section id="inicio" class="hero">
+            <h1>Bienvenido a mi portafolio web</h1>
+            <p>Explora mis proyectos y habilidades.</p>
+         </section>
+      </main>
+
+      <!-- Placeholder de proyectos personales -->
+       <section id="proyectos" class="section">
+        <h2>Mis Proyectos</h2>
+        <p>Aquí puedes ver algunos de mis trabajos recientes.</p>
+       </section>
+
+       <section id="sobre-mi" class="section">
+        <h2>Sobre Mí</h2>
+        <p>Conoce más sobre mi experiencia y habilidades.</p>
+       </section>
+
+       <section id="contacto" class="section">
+        <h2>Contacto</h2>
+        <p>¿Quieres ponerte en contacto conmigo? ¡Hablemos!</p>
+       </section>
+
+       <!-- Footer -->
+        <footer class="site-footer" id="terminos">
+            <section class="footer__cols">
+                <div>
+                    <h3>Abraham</h3>
+                    <p>Aprendis Web & Diseñador</p>
+                </div>
+                <div>
                 <h4>Links</h4>
                 <ul>
-                    <li><a href="#proyectos">Proyectos</a></li>
                     <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
                 </ul>
             </div>
             <div>
                 <h4>Legal</h4>
                 <ul>
-                    <li><a href="#terminos">Términos y condiciones</a></li>
-                    <li><a href="#privacidad">Política de privacidad</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Términos de Servicio</a></li>
                 </ul>
             </div>
             <div>
                 <h4>Sígueme</h4>
                 <ul>
-                    <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
-                    <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
                 </ul>
             </div>
-        </section>
-        <small>&copy; 2024 Abraham. Todos los derechos reservados.</small>
-    </footer>
-    <!-- Banner de cookies -->
-    <div class="cookie-banner">
-        <p>
-            Usamos cookies para mejorar tu experiencia en nuestro sitio web. Al continuar navegando, aceptas nuestro uso
-            de cookies.
-            <a href="#privacidad">Más información</a>
-        </p>
-        <button class="cookie-banner__btn">Aceptar</button>
-    </div>
+            </section>
+            <small>&copy; 2024 Abraham. Todos los derechos reservados.</small>
+        </footer>
+        <!-- Banner de cookies -->
+         <div class="cookie-banner">
+            <p>Usamos cookies para mejorar tu experiencia en nuestro sitio web. Al continuar navegando, aceptas nuestro uso de cookies.
+                <a href="#privacidad">Más información</a>
+            </p>
+            <button class="cookie-banner__accept">Aceptar</button>
+            </div>
+            <script src="./src/js/main.js"></script>
 </body>
-
 </html>
