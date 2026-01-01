@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafollio web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <meta name="description" content="Portafolio web moderno con navbar, footer, banner de cookies y flexbox">
+    <link rel="stylesheet" href="./src/css/styles.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <nav class="navbar container">
+            <a href="index.html" class="nav__logo">Mi Sitio</a>
+        </nav>
+    </header>
+
+    <main class="section container">
+        <h1>Contacto</h1>
+
+        <p>
+            Si deseas comunicarte conmigo, puedes hacerlo a través del siguiente formulario.
+        </p>
+
+        <form class="contact-form" action="#" method="post">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar mensaje</button>
+        </form>
+    </main>
+
+    <footer class="site-footer">
+        <small>© 2025 - Contacto</small>
+    </footer>
+
+</body>
+
+</html>

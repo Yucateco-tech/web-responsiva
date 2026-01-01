@@ -1,0 +1,74 @@
+/* Estilos generales */
+body {
+            margin: 0;
+            font-family: 'Lexend', sans-serif;
+            background-color: #080e2a;
+            color: #e5e7eb;
+}
+
+/* Encabezado */
+#encabezado {
+    padding: 20px 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#encabezado h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Contenido principal */
+#contenido-principal {
+    padding: 40px;
+    max-width: 900px;
+}
+
+/* Secciones */
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #e5e5e5;
+}
+
+p {
+    color: #d0d0d0;
+}
+
+/* Enlaces */
+a {
+    color: #3bd16f;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Banner de cookies */
+#cookies-banner {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #02061a;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+#cookies-banner button {
+    background-color: #3bd16f;
+    border: none;
+    padding: 8px 18px;
+    cursor: pointer;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+}
+
+#cookies-banner button:hover {
+    background-color: #2cb85c;
+}
